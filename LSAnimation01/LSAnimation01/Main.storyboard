@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ujt-Vz-2Ti">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TkI-DT-NbU">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxr-Pb-bUe">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CurrentValues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAh-55-6LN">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cAh-55-6LN" firstAttribute="centerX" secondItem="ujt-Vz-2Ti" secondAttribute="centerX" id="3kV-EM-4K6"/>
+                            <constraint firstItem="ujt-Vz-2Ti" firstAttribute="centerY" secondItem="TkI-DT-NbU" secondAttribute="centerY" id="FtB-Q5-dzt"/>
+                            <constraint firstItem="ujt-Vz-2Ti" firstAttribute="top" secondItem="cAh-55-6LN" secondAttribute="bottom" constant="18" id="IRK-9p-0UE"/>
+                            <constraint firstItem="pxr-Pb-bUe" firstAttribute="baseline" secondItem="TkI-DT-NbU" secondAttribute="baseline" id="LnN-GN-yCm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ujt-Vz-2Ti" secondAttribute="bottom" constant="74" id="O00-5Q-F5B">
+                                <variation key="widthClass=compact" constant="41"/>
+                            </constraint>
+                            <constraint firstItem="pxr-Pb-bUe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="82" id="T4O-pX-BT8">
+                                <variation key="widthClass=compact" constant="83"/>
+                            </constraint>
+                            <constraint firstItem="ujt-Vz-2Ti" firstAttribute="leading" secondItem="pxr-Pb-bUe" secondAttribute="trailing" constant="8" symbolic="YES" id="UWX-4U-oHE"/>
+                            <constraint firstItem="TkI-DT-NbU" firstAttribute="leading" secondItem="ujt-Vz-2Ti" secondAttribute="trailing" constant="8" symbolic="YES" id="lXU-mg-0U6"/>
+                            <constraint firstItem="cAh-55-6LN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xgi-tA-YTR">
+                                <variation key="widthClass=compact" constant="1.5"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ujt-Vz-2Ti"/>
+                                <exclude reference="TkI-DT-NbU"/>
+                                <exclude reference="pxr-Pb-bUe"/>
+                                <exclude reference="cAh-55-6LN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="O00-5Q-F5B"/>
+                                <exclude reference="FtB-Q5-dzt"/>
+                                <exclude reference="IRK-9p-0UE"/>
+                                <exclude reference="UWX-4U-oHE"/>
+                                <exclude reference="lXU-mg-0U6"/>
+                                <exclude reference="3kV-EM-4K6"/>
+                                <exclude reference="xgi-tA-YTR"/>
+                                <exclude reference="LnN-GN-yCm"/>
+                                <exclude reference="T4O-pX-BT8"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ujt-Vz-2Ti"/>
+                                <include reference="TkI-DT-NbU"/>
+                                <include reference="pxr-Pb-bUe"/>
+                                <include reference="cAh-55-6LN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="O00-5Q-F5B"/>
+                                <include reference="FtB-Q5-dzt"/>
+                                <include reference="IRK-9p-0UE"/>
+                                <include reference="UWX-4U-oHE"/>
+                                <include reference="lXU-mg-0U6"/>
+                                <include reference="3kV-EM-4K6"/>
+                                <include reference="xgi-tA-YTR"/>
+                                <include reference="LnN-GN-yCm"/>
+                                <include reference="T4O-pX-BT8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mySlider" destination="ujt-Vz-2Ti" id="s1Z-tP-H82"/>
+                        <outlet property="valueLabel" destination="cAh-55-6LN" id="cCp-Vu-SQ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250.5" y="304"/>
+        </scene>
+    </scenes>
+</document>
